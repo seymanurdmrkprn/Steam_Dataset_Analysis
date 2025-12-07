@@ -21,7 +21,7 @@ This project offers analysis and visualization of Steam games. It includes an in
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/seymanurdmrkprn/Steam_Dataset_Analysis>
 cd steam-games-analytics
 ```
 
