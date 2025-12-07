@@ -88,13 +88,6 @@ Other documentation files in `docs/` explain project structure and usage tips.
 
 
 
-## License
-
-
-Academic project for Scientific Computing course.
-
----
-
 ## Author
 
 Prepared by: Şeyma Nur Demirkoparan  
