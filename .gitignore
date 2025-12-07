@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+build/
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Virtualenv
+.venv/
+venv/
+ENV/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# IDEs
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Outputs
+# Data
+outputs/
+
+# Data
+*.mat
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.h5
+*.db
+*.sqlite
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# OneDrive
+*.lnk
+
+# Octave
+*.oct
+*.mex*
+
+# Misc
+*.~
