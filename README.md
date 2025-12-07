@@ -12,86 +12,94 @@ Bu proje, Steam oyunları üzerinde analiz ve görselleştirme sunar. Python (St
 
 ## Hızlı Başlangıç
 
-**Dashboard’ı başlatmak için:**
+
+# Steam Games Analytics
+
+An interactive dashboard and visualization tool for Steam games data analysis.
+
+## Overview
+
+This project provides two complementary approaches to analyzing Steam games data:
+
+- **Streamlit Dashboard**: Interactive web interface for exploring games with filters, search, and comparisons
+- **Octave Panels**: High-quality static visualizations and statistical analysis using GNU Octave
+
+## Quick Start
+
+### Prerequisites
+- Python 3.10+ with pip
+- GNU Octave 9.2.0+ (for panels)
+
+### Installation
+1. Clone the repository:
+	```bash
+	git clone <repository-url>
+	cd steam-games-analytics
+	```
+2. Install Python dependencies:
+	```bash
+	pip install streamlit pandas plotly
+	```
+
+### Running the Streamlit Dashboard
 ```bash
 streamlit run steam_dashboard.py
 ```
+Open your browser to the URL shown in the terminal (usually http://localhost:8501).
 
-**Octave demo için:**
+### Running Octave Demo
 ```octave
 cd octave/main
 octave_gui_demo_v3
 ```
 
-## Klasörler
+## Project Structure
 
-- `steam_dashboard.py`: Ana Streamlit uygulaması
-- `octave/`: Octave demo ve panel dosyaları
-- `scripts/`: Veri hazırlama ve yardımcı Python scriptleri
-- `outputs/images/`: Panel görselleri
-- `docs/`: Proje dokümantasyonu
-- `data/`: (GitHub’a eklenmez, veri dosyaları burada tutulur)
+```
+├── steam_dashboard.py      # Main Streamlit application
+├── octave/                 # Octave analysis and demo files
+├── scripts/                # Data preparation scripts
+├── outputs/images/         # Panel images (static visualizations)
+├── docs/                   # Documentation & feature comparisons
+└── ...
+```
 
-## Katkı & İletişim
+## Features
 
-Bu proje akademik amaçlıdır. Soruların veya önerilerin için dokümantasyon klasörüne göz atabilirsin.
+### Streamlit Dashboard
+- Interactive filtering by price, rating, and platform
+- Multi-game comparison
+- Image zoom for detailed viewing (see outputs/images/)
+- Search and navigation
+
+### Octave Analysis
+- 12 different visualization panels
+- Statistical analysis and correlations
+- Professional publication-quality plots
+- Curated dataset focusing on popular games
+
+## About the Data
+
+The dataset includes Steam games with:
+- Complete price and rating information
+- Platform support (Windows, Mac, Linux)
+- Genre and developer details
+- All NaN values filtered for clean analysis
+
+> **Note:** The `data/` folder contains raw and processed data files, but is excluded from GitHub for size and privacy reasons.
+
+## Documentation & Demo Comparison
+
+- See `docs/OCTAVE_vs_STREAMLIT_COMPARISON.md` for a detailed comparison of Streamlit and Octave demos, their features, and use cases.
+- Other documentation files in `docs/` explain project structure and usage tips.
+
+## License
+
+Academic project for Scientific Computing course.
 
 ---
 
-**Son güncelleme:** Aralık 2025
-
-## 🔧 Technical Details
-
-### Technologies
-- **Octave 9.2.0**: Static analysis & demo
-- **Python 3.10+**: Data processing & dashboard
-- **Streamlit**: Interactive web interface
-- **Plotly**: Dynamic visualizations
-- **Pandas**: Data manipulation
-
-### Data Processing
-- Raw data: `data/raw/steam_games.csv`
-- Preprocessing: Python scripts in `scripts/data_preparation/`
-- Fast loading: Preprocessed CSVs for Octave (2s vs 60s)
-- Demo dataset: Famous games only (1,730 curated)
-
-### Key Features
-- ✅ All NaN values filtered
-- ✅ Octave-compatible (no MATLAB-only functions)
-- ✅ Professional aesthetics
-- ✅ Image zoom in dashboard
-- ✅ Search & filter functionality
-- ✅ Price range finder
-- ✅ Multi-game comparison
-
-## 📖 Documentation
-
-- **[PROJECT_STRUCTURE.md](docs/PROJECT_STRUCTURE.md)** - Detailed directory structure
-- **[DEMO_GUIDE.md](docs/DEMO_GUIDE.md)** - How to use Octave demo
-- **[OCTAVE_vs_STREAMLIT_COMPARISON.md](docs/OCTAVE_vs_STREAMLIT_COMPARISON.md)** - Platform comparison
-
-## 🐛 Recent Fixes
-
-### Octave Demo (v3)
-- ✅ Fixed bar chart overlapping (0.6 width)
-- ✅ Fixed platform labels (XTick added)
-- ✅ Fixed scatter plot (2×2 layout with density heatmap)
-- ✅ Fixed review distribution (removed scientific notation)
-- ✅ Fixed NaN developers (comprehensive filtering)
-- ✅ All 12 menu options working
-
-### Streamlit Dashboard
-- ✅ Added image zoom feature ("🔍 Büyüt" buttons)
-- ✅ Updated all file paths to new structure
-- ✅ Fixed panel image loading
-
-## 🎯 Usage Examples
-
-### Generate Demo Dataset
-```bash
-cd scripts/data_preparation
-python prepare_demo_data.py
-```
+**Last Updated**: December 2025
 
 ### Run All Octave Panels
 ```octave
