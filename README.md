@@ -86,9 +86,7 @@ The dataset includes Steam games with:
 See `docs/OCTAVE_vs_STREAMLIT_COMPARISON.md` for a detailed comparison of Streamlit and Octave demos, their features, and use cases.
 Other documentation files in `docs/` explain project structure and usage tips.
 
-## Contributing
 
-This is an academic project. For questions or improvements, see documentation in `docs/`.
 
 ## License
 
