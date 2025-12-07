@@ -1,103 +1,44 @@
-# 🎮 Steam Games Analytics Project
 
-> Comprehensive analysis of 83,560 Steam games using Octave and Python/Streamlit
+# Steam Games Analytics
 
-## 📊 Project Overview
+Bu proje, Steam oyunları üzerinde analiz ve görselleştirme sunar. Python (Streamlit) ile etkileşimli bir dashboard ve Octave ile statik, yüksek kaliteli grafikler içerir.
 
-This project provides both **static high-quality visualizations** (Octave) and **interactive analysis** (Streamlit) for Steam games data.
+## Kısaca Proje
 
-### Key Statistics
-- **Total Games**: 83,560
-- **Demo Dataset**: 1,730 famous games
-- **Analysis Panels**: 24 professional visualizations
-- **Dashboard Pages**: 7 interactive pages
-- **Octave Demo**: 12 menu options
+- Oyun verileriyle istatistiksel analiz ve görselleştirme
+- Streamlit ile kolayca web arayüzü üzerinden inceleme
+- Octave ile profesyonel görseller
+- Kod ve görseller GitHub’da, veri dosyaları hariç tutulmuştur
 
-## 🚀 Quick Start
+## Hızlı Başlangıç
 
-### 1. Run Streamlit Dashboard
+**Dashboard’ı başlatmak için:**
 ```bash
 streamlit run steam_dashboard.py
 ```
-Features:
-- 🏠 Overview & statistics
-- 🔍 Search & filter games
-- ⚖️ Compare multiple games
-- 📈 Interactive visualizations
-- 🖼️ **24 static panels with zoom** (click "🔍 Büyüt" to enlarge)
-- 📋 Sortable data table
-- 💡 Key insights
 
-### 2. Run Octave Interactive Demo
+**Octave demo için:**
 ```octave
 cd octave/main
 octave_gui_demo_v3
 ```
-12 Menu Options:
-1. Top 10 Games
-2. Price Analysis
-3. Developer Rankings
-4. Genre Distribution
-5. Rating Analysis
-6. **Price vs Rating** (redesigned 2×2 layout)
-7. Review Distribution
-8. Yearly Trends
-9. Platform Analysis
-10. Search Games
-11. Find by Price Range
-12. Statistics
-13. Exit
 
-## 📁 Project Structure
+## Klasörler
 
-```
-Scientific Computing/
-├── data/
-│   ├── raw/              # steam_games.csv (83,560 games)
-│   ├── processed/        # demo_data.csv, panel CSVs
-│   └── mappings/         # Translation files
-├── scripts/
-│   ├── data_preparation/ # Python preprocessing scripts
-│   └── utilities/
-├── octave/
-│   ├── main/            # octave_gui_demo_v3.m
-│   └── panels/          # 24 panel generation scripts
-├── outputs/
-│   └── images/          # 24 PNG panels (1600×1100, 300 DPI)
-├── docs/
-│   ├── PROJECT_STRUCTURE.md
-│   ├── DEMO_GUIDE.md
-│   └── OCTAVE_vs_STREAMLIT_COMPARISON.md
-└── steam_dashboard.py   # Main Streamlit app
-```
+- `steam_dashboard.py`: Ana Streamlit uygulaması
+- `octave/`: Octave demo ve panel dosyaları
+- `scripts/`: Veri hazırlama ve yardımcı Python scriptleri
+- `outputs/images/`: Panel görselleri
+- `docs/`: Proje dokümantasyonu
+- `data/`: (GitHub’a eklenmez, veri dosyaları burada tutulur)
 
-**See [docs/PROJECT_STRUCTURE.md](docs/PROJECT_STRUCTURE.md) for detailed structure**
+## Katkı & İletişim
 
-## 🎨 Analysis Categories
+Bu proje akademik amaçlıdır. Soruların veya önerilerin için dokümantasyon klasörüne göz atabilirsin.
 
-### 24 Static Panels (Octave)
-1. **Price Analysis (6 panels)**
-   - Hexbin density, boxplot, distribution, heatmap, trends, genre comparison
+---
 
-2. **Playtime Analysis (4 panels)**
-   - Density, boxplot, violin plot, genre facets
-
-3. **Time Series (4 panels)**
-   - Yearly trends, platform evolution, monthly patterns, genre trends
-
-4. **Free vs Paid (2 panels)**
-   - Score comparison, playtime comparison
-
-5. **Performance Metrics (4 panels)**
-   - Top 100 characteristics, success factors, developer analysis, top games
-
-6. **Advanced Panels (4 panels)**
-   - Scatter, boxplot, linechart, stacked bar
-
-All panels:
-- High quality: 1600×1100 pixels, 300 DPI
-- Professional publication-ready
-- Viewable in dashboard with zoom feature
+**Son güncelleme:** Aralık 2025
 
 ## 🔧 Technical Details
 
