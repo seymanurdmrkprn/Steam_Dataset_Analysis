@@ -92,7 +92,16 @@ This is an academic project. For questions or improvements, see documentation in
 
 ## License
 
+
 Academic project for Scientific Computing course.
+
+---
+
+## Author
+
+Prepared by: Şeyma Nur Demirkoparan  
+Student Number: 210717026  
+Muğla Sıtkı Koçman University, Department of Software Engineering
 
 ---
 
